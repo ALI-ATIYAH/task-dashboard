@@ -1,35 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using @vitejs/plugin-react"
-    />
-    <link rel="apple-touch-icon" href="/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="/manifest.json" />
-    <title>Task Dashboard</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
-  <script type="module" src="/src/index.jsx"></script>
-</html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#101827">
+<title>لوحة الإنجاز الدراسي</title>
+<style>
+:root{--bg:#0b1220;--panel:#121d2e;--panel2:#18263a;--line:#26364c;--text:#edf3fb;--muted:#91a2b8;--accent:#65d6b2;--blue:#78a9ff;--orange:#ffbd69;--red:#ff7d86}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% -10%,#203b52 0,transparent 40%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;min-height:100vh}.wrap{max-width:1180px;margin:auto;padding:30px 22px 60px}.top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:28px}.eyebrow{color:var(--accent);font-size:12px;font-weight:700;letter-spacing:1px}.top h1{margin:5px 0;font-size:clamp(24px,4vw,36px)}.sub{color:var(--muted);margin:0}.actions{display:flex;gap:9px;flex-wrap:wrap}button,.btn{border:1px solid var(--line);background:var(--panel2);color:var(--text);padding:10px 14px;border-radius:11px;cursor:pointer;font:inherit}button:hover{border-color:var(--accent)}.primary{background:var(--accent);color:#082019;border-color:var(--accent);font-weight:800}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:22px}.stat,.subject,.detail{background:linear-gradient(145deg,#152338,#101a2a);border:1px solid var(--line);border-radius:17px;padding:18px}.stat-label{color:var(--muted);font-size:13px}.stat strong{display:block;font-size:28px;margin-top:6px}.progress{height:8px;background:#29394e;border-radius:20px;overflow:hidden;margin-top:12px}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--accent));border-radius:20px;transition:width .25s}.section-head{display:flex;align-items:center;justify-content:space-between;margin:26px 0 13px}.section-head h2{font-size:19px;margin:0}.hint{color:var(--muted);font-size:12px}.subjects{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.subject{cursor:pointer;transition:.18s}.subject:hover,.subject.active{border-color:var(--accent);transform:translateY(-2px)}.subject-head{display:flex;justify-content:space-between;gap:10px;align-items:center}.subject h3{margin:0;font-size:17px}.percent{font-weight:800;color:var(--accent)}.subject-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-top:12px}.detail{margin-top:18px}.detail-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.detail h2{margin:0}.tabs{display:flex;gap:7px;flex-wrap:wrap;margin:17px 0}.tab{font-size:13px;padding:8px 12px}.tab.active{background:#21473f;border-color:#3b9f83;color:#b9ffe7}.task-list{display:grid;gap:9px}.task{display:flex;align-items:center;gap:11px;background:#17263a;border:1px solid #293b52;border-radius:12px;padding:12px}.task input[type=checkbox]{width:18px;height:18px;accent-color:var(--accent);flex:none}.task-main{flex:1;min-width:0}.task-name{font-weight:650;overflow-wrap:anywhere}.task.done .task-name{text-decoration:line-through;color:var(--muted)}.task small{display:block;color:var(--muted);margin-top:3px}.delete{color:#ff9da4;padding:6px 9px}.empty{color:var(--muted);text-align:center;padding:28px;border:1px dashed var(--line);border-radius:12px}.modal{position:fixed;inset:0;background:#030811c9;display:none;align-items:center;justify-content:center;padding:18px;z-index:5}.modal.show{display:flex}.dialog{width:min(440px,100%);background:#142238;border:1px solid var(--line);border-radius:18px;padding:22px}.dialog h3{margin:0 0 16px}.field{display:grid;gap:6px;margin:12px 0}.field label{font-size:13px;color:var(--muted)}input[type=text],input[type=date],select{width:100%;background:#0c1727;border:1px solid var(--line);border-radius:10px;padding:11px;color:var(--text);font:inherit}input:focus,select:focus{outline:1px solid var(--accent)}.dialog-actions{display:flex;gap:9px;margin-top:18px}.dialog-actions button{flex:1}.foot{text-align:center;color:var(--muted);font-size:12px;margin-top:28px}@media(max-width:700px){.top{align-items:flex-start;flex-direction:column}.stats{grid-template-columns:1fr}.subjects{grid-template-columns:1fr}.wrap{padding:22px 14px 45px}}
+</style></head>
+<body><main class="wrap">
+<header class="top"><div><div class="eyebrow">YOUR STUDY SPACE</div><h1>لوحة الإنجاز الدراسي</h1><p class="sub">رتّب مهامك، تابع تقدمك، وخلّ إنجازك واضح قدامك.</p></div><div class="actions"><button onclick="editSubjects()">تعديل أسماء المواد</button><button class="primary" onclick="openTask()">＋ إضافة مهمة</button></div></header>
+<section class="stats"><div class="stat"><div class="stat-label">الإنجاز الكلي</div><strong id="overall">0%</strong><div class="progress"><span id="overallBar"></span></div></div><div class="stat"><div class="stat-label">المهام المكتملة</div><strong id="completed">0 / 0</strong><div class="hint">كل مهمة تنحسب بالتساوي</div></div><div class="stat"><div class="stat-label">المهام المتبقية</div><strong id="remaining">0</strong><div class="hint">شد حيلك، خطوة بخطوة</div></div></section>
+<div class="section-head"><h2>المواد الدراسية</h2><span class="hint">اختر مادة لعرض تفاصيلها</span></div><section class="subjects" id="subjects"></section>
+<section class="detail"><div class="detail-top"><div><div class="eyebrow">SUBJECT DETAILS</div><h2 id="detailTitle">المادة الأولى</h2></div><button class="primary" onclick="openTask()">＋ إضافة مهمة للمادة</button></div><div class="tabs" id="tabs"></div><div class="task-list" id="tasks"></div></section>
+<div class="foot">بياناتك تُحفظ تلقائياً على هذا المتصفح فقط.</div></main>
+<div class="modal" id="modal"><div class="dialog"><h3 id="modalTitle">إضافة مهمة</h3><form id="taskForm"><div class="field"><label>اسم المهمة</label><input id="taskName" type="text" maxlength="100" required placeholder="مثال: حل واجب الفصل الأول"></div><div class="field"><label>المادة</label><select id="taskSubject"></select></div><div class="field"><label>القسم</label><select id="taskCategory"><option value="واجبات">الواجبات</option><option value="مشاريع">المشاريع</option><option value="بحوث">البحوث</option><option value="برزنتيشن">البرزنتيشن</option></select></div><div class="field"><label>موعد التسليم (اختياري)</label><input id="taskDate" type="date"></div><div class="dialog-actions"><button type="button" onclick="closeModal()">إلغاء</button><button class="primary" type="submit">حفظ المهمة</button></div></form></div></div>
+<script>
+const categories=['الواجبات','المشاريع','البحوث','برزنتيشن'];
+let data=JSON.parse(localStorage.getItem('studyTrackerV1')||'null')||{subjects:['المادة الأولى','المادة الثانية','المادة الثالثة','المادة الرابعة','المادة الخامسة'],tasks:[]};
+let selected=0,filter='الكل';
+const $=id=>document.getElementById(id);const save=()=>localStorage.setItem('studyTrackerV1',JSON.stringify(data));
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function stats(list){let done=list.filter(t=>t.done).length;return {done,total:list.length,pct:list.length?Math.round(done/list.length*100):0}}
+function render(){let all=stats(data.tasks);$('overall').textContent=all.pct+'%';$('overallBar').style.width=all.pct+'%';$('completed').textContent=`${all.done} / ${all.total}`;$('remaining').textContent=all.total-all.done;
+$('subjects').innerHTML=data.subjects.map((s,i)=>{let st=stats(data.tasks.filter(t=>t.subject===i));return `<article class="subject ${selected===i?'active':''}" onclick="selectSubject(${i})"><div class="subject-head"><h3>${esc(s)}</h3><span class="percent">${st.pct}%</span></div><div class="progress"><span style="width:${st.pct}%"></span></div><div class="subject-meta"><span>${st.done} من ${st.total} مكتمل</span><span>${st.total} مهمة</span></div></article>`}).join('');
+$('detailTitle').textContent=data.subjects[selected]||'المادة';$('tabs').innerHTML=['الكل',...categories].map(c=>`<button class="tab ${filter===c?'active':''}" onclick="setFilter('${c}')">${c}</button>`).join('');let list=data.tasks.map((t,i)=>({...t,index:i})).filter(t=>t.subject===selected&&(filter==='الكل'||t.category===filter));$('tasks').innerHTML=list.length?list.map(t=>`<div class="task ${t.done?'done':''}"><input type="checkbox" ${t.done?'checked':''} onchange="toggleTask(${t.index},this.checked)"><div class="task-main"><div class="task-name">${esc(t.name)}</div><small>${esc(t.category)}${t.date?' · التسليم: '+esc(t.date):''}</small></div><button class="delete" title="حذف" onclick="deleteTask(${t.index})">حذف</button></div>`).join(''):'<div class="empty">ما فيه مهام هنا حالياً — أضف أول مهمة وابدأ الإنجاز.</div>';
+$('taskSubject').innerHTML=data.subjects.map((s,i)=>`<option value="${i}" ${i===selected?'selected':''}>${esc(s)}</option>`).join('');}
+function selectSubject(i){selected=i;filter='الكل';render()}function setFilter(c){filter=c;render()}function toggleTask(i,v){data.tasks[i].done=v;save();render()}function deleteTask(i){if(confirm('متأكد من حذف المهمة؟')){data.tasks.splice(i,1);save();render()}}
+function openTask(){if(!data.subjects.length)return; $('taskName').value='';$('taskDate').value='';$('taskSubject').value=selected;$('taskCategory').value=categories.includes(filter)?filter:'واجبات';$('modal').classList.add('show');$('taskName').focus()}function closeModal(){$('modal').classList.remove('show')}
+$('taskForm').addEventListener('submit',e=>{e.preventDefault();let name=$('taskName').value.trim();if(!name)return;data.tasks.push({name,subject:Number($('taskSubject').value),category:$('taskCategory').value,date:$('taskDate').value,done:false});selected=Number($('taskSubject').value);filter=$('taskCategory').value;save();closeModal();render()});
+function editSubjects(){let updated=[];for(let i=0;i<5;i++){let v=prompt(`اسم المادة ${i+1}:`,data.subjects[i]||`المادة ${i+1}`);if(v===null)return;updated.push(v.trim()||`المادة ${i+1}`)}data.subjects=updated;selected=Math.min(selected,4);save();render()}
+$('modal').addEventListener('click',e=>{if(e.target===$('modal'))closeModal()});render();
+</script></body></html>
